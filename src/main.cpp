@@ -6,7 +6,7 @@
 #include <cassert>
 
 void INIT() {
-	if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) != 0) {
+    if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) != 0) {
         SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
         return;
     }
@@ -41,7 +41,7 @@ void INIT() {
 
     assert(surface != nullptr);
 
-	auto window = SDL_CreateWindow(
+    auto window = SDL_CreateWindow(
         "An SDL2 window",                  // window title
         SDL_WINDOWPOS_UNDEFINED,           // initial x position
         SDL_WINDOWPOS_UNDEFINED,           // initial y position

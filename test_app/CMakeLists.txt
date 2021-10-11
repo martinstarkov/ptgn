@@ -12,4 +12,4 @@ target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}"
 
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/resources/" DESTINATION "${PROJECT_BINARY_DIR}/resources")
 
-add_ptgn_to(${PROJECT_NAME})
+add_library_name_to(${PROJECT_NAME})
